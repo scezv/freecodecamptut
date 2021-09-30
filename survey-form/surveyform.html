@@ -1,0 +1,144 @@
+<html>
+    <style>
+         html {
+            background-image: url('https://media.istockphoto.com/photos/door-to-dark-room-with-bright-light-background-illustration-picture-id535631119?k=20&m=535631119&s=612x612&w=0&h=74vtUaenR2ZFU5c_g5PdutoL7Df42AhhstrWcANVv0Y=');
+            background-size: cover;
+            height: 100%;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            margin: 0;
+            color: white;
+            
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: 2.375rem;
+            padding: 0.375rem 0.75rem;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .container {
+            width: 100%;
+            margin: 3.125rem auto 0 auto;
+        }
+        #header {
+            text-align: center;
+            color: teal;
+        }
+        @media (min-width: 768px){
+        .container {
+            max-width: 720px;
+        }
+    }
+        body {
+            display: block;
+        }
+        div.form{
+            display: block;
+            text-align: center;
+        }
+        #form {
+            background-color: rgba(98, 53, 141, 0.7);
+            padding: 2.5rem;
+            text-align: left;
+        }
+        textarea {
+            width: 100%;
+            padding: 0.625rem;
+            min-height: 120px;
+            resize: vertical;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            background: #6d2f8a;
+            color: inherit;
+            margin-top: 25px;
+            padding: 0.75rem;
+            cursor: pointer;
+        }
+    </style>
+    <head>
+        <title>
+            Survey Form
+        </title>
+    </head>
+    <body>
+        <div class='container'>
+            <div id='header'>
+                <h1 id='title'>
+                    norD Survey Form
+                </h1>
+                <p>Thank you for taking the time to help us improve this platform</p>
+            </div>
+            <div id='form'>
+                <form id="survey-form" action="">
+                    <div class='form-group'>
+                        <label for="name-label" for='name'>Name</label><br>
+                        <input type="text" name='name'id='name' placeholder="Enter your name" class="form-control" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label id='email-label' for="email" >Email</label><br>
+                        <input type="email" name='email' id='email' placeholder="Enter your Email" class="form-control" required><br>
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age<span class="smcl">(Optional)</span></label><br>
+                        <input type="number" id='number' name="age" min="10" max="99" class="form-control" placeholder="Age"><br>
+                    </div>
+                    <div class="form-group">
+                        <p>Which option best describes your current role?</p>
+                        <select id='role' name='role' class="form-control" required>
+                            <option value="" disabled selected>Select current role</option>
+                            <option value="student">Student</option>
+                            <option value="full-time-job">Full Time Job</option>
+                            <option value="full-time-learner">Full Time Learner</option>
+                            <option value="prefer-not-to-say">Prefer not to say</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Would you recommend norD to a friend?</p>
+                            <input type="radio" name="recommend" id="definitely" value="Definitely">
+                            <label for='recommend'>Definitely</label><br>
+                            <input type="radio" name="recommend" id='maybe' value="Maybe">
+                            <label for="recommend">Maybe</label><br>
+                            <input type="radio" name='recommend' id='notsure' value="NotSure">
+                            <label for="recommend">Not Sure</label> <br>
+                    </div>
+                    <div class="form-group">
+                        <p>What is your favorite feature of norD?</p>
+                        <select id='feature' name='feature' class="form-control" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="manager">Notes and Password Manager Integration</option>
+                            <option value="cloudsync">Cloud Sync</option>
+                            <option value="fastdadta">Fast Data Access</option>
+                            <option value="aota">All of the above</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <p>What would you like to see improved? <span class='smcl'>(Check all that apply)</span>
+                        </p>
+                        <label><input name="perfer" type="checkbox" class="input-checkbox" value="front-end-developments">Front-End Devevelopments</label><br>
+                        <label><input name="perfer" type="checkbox" class="input-checkbox" valuye='backend-developments'>Backend Developments</label><br>
+                        <label><input name="perfer" type="checkbox" class="input-checkbox" value='optimized-ui'>Optimized UI</label><br>
+                        <label><input name="perfer" type="checkbox" class="input-checkbox" value='fasteraccess'>Faster Access</label><br>
+                    </div>
+                    <div class="form-group">
+                        <p>Any recommendations or suggestions?</p>
+                        <textarea name="suggestions" id="comments" cols="30" rows="10" placeholder="Enter your comments here..." style="position: relative !important; z-index: 99999 !important;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
