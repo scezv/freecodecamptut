@@ -1,0 +1,205 @@
+<html>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Goudy Bookletter 1911", sans-serif;
+
+        }
+        #header {
+            width: 100%;
+        }
+        #logo {
+            display: inline-block;
+            vertical-align:top
+        }
+        #nav-bar {
+            text-align: right;
+        }
+        #nav-bar a {
+            text-decoration: none;
+            color: black;
+        }
+        #main-body {
+            width: 70%;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+        }
+        #header-img {
+            width: 50px;
+            height: 50px;
+        }
+        #form-email-address {
+            flex-direction: column;
+        }     
+        #form-email-address.button {
+            margin-top: 30px;
+        }
+        #main-body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #get-started {
+            max-width: 150px;
+            width: 100%;
+            height: 30px;
+            margin: 15px 0;
+            border: 0;
+            background-color: #f1c40f;
+        }
+        .details-head {
+            margin-top: 25px;
+        }
+        #video {
+            margin-top: 50px;
+        }
+        input {
+            margin-top: 10px;
+            width: 200px;
+        }
+        #pricing-details {
+            padding: 2rem 2rem;
+            margin: 1rem;
+            text-align: center;
+
+        }
+        .pricing {
+            margin-top: 30px;
+            border: 3px solid black;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+        }
+        .pricing h4 {
+            padding-top: 10px;
+            background-color: rgb(151, 146, 155);
+            height: 40px;
+        }
+        @media (max-width: 70%) {
+            #video {
+                display: none;
+            }
+        }
+        .price {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
+        .select {
+            max-width: 100px;
+            width: 100%;
+            height: 40px;
+            margin: 15px 0;
+            border: 1px solid black;
+            background-color: #f1c40f;
+            cursor: pointer;
+        }
+        #footer {
+            text-align: right;
+            background-color: rgb(151, 146, 155);
+            width: 70%;
+            height: 50px;
+            padding-top: 10px;
+            padding-right: 20px;
+        }
+        #footer a {
+            color: black;
+        }
+        .footer-links {
+            text-decoration: none;
+        }
+    </style>
+    <head>
+        <title>Landing Page</title>
+    </head>
+    <body>
+            <header id='header'> 
+                <div class="logo">
+                    <img src="https://logodesign.business/wp-content/uploads/2019/12/App_logos14.jpg" alt="logo of norD app" id='header-img'>
+                </div>
+                <nav id='nav-bar'>
+                        <a style="margin-right: 90px;" class='nav-link' href="#details-basic">Features</a>
+                        <a style="margin-right: 60px;" class='nav-link' href="#video">How It Works</a>
+                        <a style="margin-right: 30px;" class='nav-link' href="#pricing">Pricing</a>
+                </nav>
+            </header>
+            <div id='main-body'>
+                <h1>Secure, cloud based password manager</h1>
+                <div id='enter-main'>
+                    <form id = 'form-email-address'>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" id="get-started"><strong>GET STARTED</strong></button>
+                    </form>
+                </div>
+                <div style="text-align: left;" id='details-basic'>
+                    <div>
+                        <h2 class="details-head">Premium Materials</h2>
+                        <p>We offer all the premium features to all our users.</p>
+                    </div>
+                    <div>
+                        <h2 class="details-head">Faster Access</h2>
+                        <p>We offer all our faster access to our customers.</p>
+                    </div>
+                    <div>
+                        <h2 class="details-head">Quality Assurance</h2>
+                        <p>Due to our cloud based storage system. All your data are protected securely.</p>
+                    </div>
+                </div>
+                <div id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5qap5aO4i9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id='pricing-details'>
+                    <div class="pricing">
+                        <h4><strong>TENOR TROMBONE
+                        </strong>
+                        </h4>
+                        <p class="price">$0.99</p>
+                        <p>Feature 1</p><br>
+                        <p>Feature 2</p><br>
+                        <p>Feature 3</p><br>
+                        <p>Feature 4</p><br>
+                        <button class='select' type="submit">SELECT</button>
+                    </div>
+                    <div class="pricing">
+                        <h4><strong>TENOR TROMBONE
+                        </strong>
+                        </h4>
+                        <p class="price">$4.99</p>
+                        <p>Feature 1</p><br>
+                        <p>Feature 2</p><br>
+                        <p>Feature 3</p><br>
+                        <p>Feature 4</p><br>
+                        <button class='select' type="submit">SELECT</button>
+                    </div>
+                    <div class="pricing">
+                        <h4><strong>TENOR TROMBONE
+                        </strong>
+                        </h4>
+                        <p class="price">$9.99</p>
+                        <p>Feature 1</p><br>
+                        <p>Feature 2</p><br>
+                        <p>Feature 3</p><br>
+                        <p>Feature 4</p><br>
+                        <button class='select' type="submit">SELECT</button>
+                    </div>
+                </div>
+                <div id='footer'>
+                <a class="footer-links" href="">Privacy</a>
+                <a class="footer-links" href="">Terms</a>
+                <a class="footer-links" href="">Contact</a><br>
+                <div style="margin-top: 5px;" id="copyright">
+                    <p>Copyright 2016, Original Trombones
+                    </p>
+                </div>
+            </div>
+            </div>
+    </body>
+</html>
