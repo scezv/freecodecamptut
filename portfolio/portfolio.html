@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            margin: 0;
+        }
+        #welcome {
+            background:linear-gradient(to bottom left, yellow, rgb(226, 70, 218));
+            height: 1080px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .welcome-msg {
+            font-size: 24px;
+            text-align: center;
+            color: white;
+        }
+        #primary-wlc-msg {
+            width: 100%;
+            font-size: 2em;
+            color: tomato;
+        }
+        #works {
+            background:linear-gradient(to bottom right, rgb(226, 70, 218), yellow);
+            height: 1080px;
+            margin: 0;
+            padding: 0;
+        }
+        #works-details {
+            text-align: center;
+        }
+        .work-items {
+            border: solid;
+            margin: 30px 30px 30px 30px;
+            border: 3px solid black;
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+        }
+        #footer {
+            background:linear-gradient(to bottom left, yellow, rgb(226, 70, 218));
+            height: 1080px;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            padding-top: 25%;
+        }
+        .anchor-items {
+            text-decoration: none;
+            cursor: pointer;
+            color: white;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        #anchors {
+            margin-top: 80px;
+        }
+        .anchor-items:hover {
+            animation-name: hovereff;
+            animation-duration: 1s;
+        }
+        @keyframes hovereff {
+            50% {
+                color: black;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            100% {
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+        }
+        #nav {
+            width: 100%;
+            position: fixed;
+            text-align: right;
+            height: 50px;
+            color: black;
+            background: linear-gradient(to right,rgb(255, 140, 140), rgb(255, 255, 104));
+        }
+        #nav a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            padding-top: 20px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susan Shrestha</title>
+</head>
+<body>
+    <div id='nav'>
+        <a style="padding-top: 30px;" class="nav-links" href="#welcome">About</a>
+        <a class="nav-links" href="#works">Works</a>
+        <a class="nav-links" href="#footer">Contact</a><br>
+    </div>
+    <div id='welcome'>
+        <section class="welcome-sec" id="welcome-message">
+            <div class="welcome-msg" id='primary-wlc-msg'>
+                <h1>HELLO, I AM SUSAN</h1>
+                <div class="welcome-msg">
+                    <p>learning</p>
+            </div>
+            </div>
+        </section>
+    </div>
+    <div id="works">
+        <p style="font-size: 30px; text-decoration: underline; color: teal; height: 20px; text-align: center; margin: 0;">These are some of my projects</p>
+        <div id='works-details'>
+            <div class="work-items">
+                
+            </div>
+            <div class="work-items">
+                
+            </div>
+            <div class="work-items">
+                
+            </div>
+            <br>
+            <div class="work-items">
+                
+            </div>
+            <div class="work-items">
+                
+            </div>
+            <div class="work-items">
+                
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="welcome-msg">
+        <div>
+            <p style="font-size: 50px; color: rgb(255, 255, 255);"><strong>Let's work together</strong><p>
+                <div>
+                    <div>
+                    <p style="font-size: 28px; color: white; margin-top: -40px;"><em>How do you take your coffee??</em></p>
+                </div>
+        <div id="anchors">
+            <a class="anchor-items" href=""><img src="">Facebook</a>
+            <a class="anchor-items" href="">Github</a>
+            <a class="anchor-items" href="">Twitter</a>
+            <a class="anchor-items" href="">Send a mail</a>
+            <a class="anchor-items" href="">Call me</a>
+        </div>
+    </div>
+    
+</body>
+</html>
